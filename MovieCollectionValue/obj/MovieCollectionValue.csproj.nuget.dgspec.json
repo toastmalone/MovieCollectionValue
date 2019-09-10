@@ -1,0 +1,63 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\joshm\\source\\repos\\MovieCollectionValue\\MovieCollectionValue\\MovieCollectionValue.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\joshm\\source\\repos\\MovieCollectionValue\\MovieCollectionValue\\MovieCollectionValue.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\joshm\\source\\repos\\MovieCollectionValue\\MovieCollectionValue\\MovieCollectionValue.csproj",
+        "projectName": "MovieCollectionValue",
+        "projectPath": "C:\\Users\\joshm\\source\\repos\\MovieCollectionValue\\MovieCollectionValue\\MovieCollectionValue.csproj",
+        "packagesPath": "C:\\Users\\joshm\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\joshm\\source\\repos\\MovieCollectionValue\\MovieCollectionValue\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\joshm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "IronWebScraper": {
+              "target": "Package",
+              "version": "[4.0.4.3, )"
+            },
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
