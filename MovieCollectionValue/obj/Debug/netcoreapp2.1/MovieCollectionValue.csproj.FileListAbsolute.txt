@@ -6,3 +6,14 @@ C:\Users\joshm\source\repos\MovieCollectionValue\MovieCollectionValue\obj\Debug\
 C:\Users\joshm\source\repos\MovieCollectionValue\MovieCollectionValue\obj\Debug\netcoreapp2.1\MovieCollectionValue.csproj.CoreCompileInputs.cache
 C:\Users\joshm\source\repos\MovieCollectionValue\MovieCollectionValue\obj\Debug\netcoreapp2.1\MovieCollectionValue.AssemblyInfoInputs.cache
 C:\Users\joshm\source\repos\MovieCollectionValue\MovieCollectionValue\obj\Debug\netcoreapp2.1\MovieCollectionValue.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\Personal Projects\MovieCollectionValue\MovieCollectionValue\bin\Debug\netcoreapp2.1\MovieCollectionValue.deps.json
+C:\Users\Administrator\Desktop\Personal Projects\MovieCollectionValue\MovieCollectionValue\bin\Debug\netcoreapp2.1\MovieCollectionValue.runtimeconfig.json
+C:\Users\Administrator\Desktop\Personal Projects\MovieCollectionValue\MovieCollectionValue\bin\Debug\netcoreapp2.1\MovieCollectionValue.runtimeconfig.dev.json
+C:\Users\Administrator\Desktop\Personal Projects\MovieCollectionValue\MovieCollectionValue\bin\Debug\netcoreapp2.1\MovieCollectionValue.dll
+C:\Users\Administrator\Desktop\Personal Projects\MovieCollectionValue\MovieCollectionValue\bin\Debug\netcoreapp2.1\MovieCollectionValue.pdb
+C:\Users\Administrator\Desktop\Personal Projects\MovieCollectionValue\MovieCollectionValue\obj\Debug\netcoreapp2.1\MovieCollectionValue.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\Personal Projects\MovieCollectionValue\MovieCollectionValue\obj\Debug\netcoreapp2.1\MovieCollectionValue.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Personal Projects\MovieCollectionValue\MovieCollectionValue\obj\Debug\netcoreapp2.1\MovieCollectionValue.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\Personal Projects\MovieCollectionValue\MovieCollectionValue\obj\Debug\netcoreapp2.1\MovieCollectionValue.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\Personal Projects\MovieCollectionValue\MovieCollectionValue\obj\Debug\netcoreapp2.1\MovieCollectionValue.dll
+C:\Users\Administrator\Desktop\Personal Projects\MovieCollectionValue\MovieCollectionValue\obj\Debug\netcoreapp2.1\MovieCollectionValue.pdb

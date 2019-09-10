@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\joshm\\source\\repos\\MovieCollectionValue\\MovieCollectionValue\\MovieCollectionValue.csproj": {}
+    "C:\\Users\\Administrator\\Desktop\\Personal Projects\\MovieCollectionValue\\MovieCollectionValue\\MovieCollectionValue.csproj": {}
   },
   "projects": {
-    "C:\\Users\\joshm\\source\\repos\\MovieCollectionValue\\MovieCollectionValue\\MovieCollectionValue.csproj": {
+    "C:\\Users\\Administrator\\Desktop\\Personal Projects\\MovieCollectionValue\\MovieCollectionValue\\MovieCollectionValue.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joshm\\source\\repos\\MovieCollectionValue\\MovieCollectionValue\\MovieCollectionValue.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\Personal Projects\\MovieCollectionValue\\MovieCollectionValue\\MovieCollectionValue.csproj",
         "projectName": "MovieCollectionValue",
-        "projectPath": "C:\\Users\\joshm\\source\\repos\\MovieCollectionValue\\MovieCollectionValue\\MovieCollectionValue.csproj",
-        "packagesPath": "C:\\Users\\joshm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\joshm\\source\\repos\\MovieCollectionValue\\MovieCollectionValue\\obj\\",
+        "projectPath": "C:\\Users\\Administrator\\Desktop\\Personal Projects\\MovieCollectionValue\\MovieCollectionValue\\MovieCollectionValue.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Administrator\\Desktop\\Personal Projects\\MovieCollectionValue\\MovieCollectionValue\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\joshm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
