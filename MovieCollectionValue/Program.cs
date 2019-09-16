@@ -7,6 +7,7 @@ namespace MovieCollectionValue
 {
     class Program
     {
+        public double value = 0.0;
         static void Main(string[] args)
         {
             string moviesFolderLocation;
@@ -22,41 +23,46 @@ namespace MovieCollectionValue
             {
                 movies[i] = movies[i].Replace(moviesFolderLocation + "\\", "");
                 movies[i] = movies[i].Replace(" ", "+");
+                movies[i] = $@"https://www.amazon.com/s?k={movies[i]}&i=instant-video&ref=nb_sb_noss_2";
             }
-                AmazonScraper scraper = new AmazonScraper(movies);
-                scraper.Start();
+
+            AmazonScraper scraper = new AmazonScraper(movies);
+            scraper.Start();
+            Console.WriteLine(scraper.collectionValue);
+            Console.ReadLine();
         }
 
     }
 
     class AmazonScraper : WebScraper
     {
-        double value = 0.0;
-        List<string> _movies = new List<string>();
+        public double collectionValue = 0.0;
         public override void Init()
         {
             this.LoggingLevel = WebScraper.LogLevel.All;
-            this.Request(_movies, Parse);
         }
 
         public override void Parse(Response response)
         {
             HtmlNode[] nodes = response.Css("#search  div > div:nth-child(2) > div:nth-child(1) > div > div > div.a-row.a-size-base.a-color-secondary > div > a > span");
-            foreach (HtmlNode node in nodes)
+            string price = nodes[0].InnerHtml.ToString();
+            if(price.Contains("to buy"))
             {
-                Console.WriteLine(node.ChildNodes[0].TextContent);
+                double movieValue = 0.0;
+                price = price.Replace("from $", "");
+                price = price.Replace("to buy", "");
+                if(double.TryParse(price, out movieValue))
+                {
+                    collectionValue += movieValue;
+                }
+
+                
             }
         }
 
         public AmazonScraper(string[] movies)
         {
-            
-          for(int i = 0; i < movies.Length; i++)
-          {
-                _movies.Add($@"https://www.amazon.com/s?k={movies[i]}&i=instant-video&ref=nb_sb_noss_2");
-          }
-
-           
+            this.Request(movies, Parse);
         }
     }
 }

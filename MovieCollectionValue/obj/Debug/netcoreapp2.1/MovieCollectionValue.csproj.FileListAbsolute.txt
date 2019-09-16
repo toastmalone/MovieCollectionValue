@@ -17,3 +17,6 @@ C:\Users\Administrator\Desktop\Personal Projects\MovieCollectionValue\MovieColle
 C:\Users\Administrator\Desktop\Personal Projects\MovieCollectionValue\MovieCollectionValue\obj\Debug\netcoreapp2.1\MovieCollectionValue.AssemblyInfo.cs
 C:\Users\Administrator\Desktop\Personal Projects\MovieCollectionValue\MovieCollectionValue\obj\Debug\netcoreapp2.1\MovieCollectionValue.dll
 C:\Users\Administrator\Desktop\Personal Projects\MovieCollectionValue\MovieCollectionValue\obj\Debug\netcoreapp2.1\MovieCollectionValue.pdb
+C:\Users\joshm\source\repos\MovieCollectionValue\MovieCollectionValue\bin\Debug\netcoreapp2.1\MovieCollectionValue.pdb
+C:\Users\joshm\source\repos\MovieCollectionValue\MovieCollectionValue\obj\Debug\netcoreapp2.1\MovieCollectionValue.dll
+C:\Users\joshm\source\repos\MovieCollectionValue\MovieCollectionValue\obj\Debug\netcoreapp2.1\MovieCollectionValue.pdb
