@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\joshm\\source\\repos\\MovieCollectionValue\\MovieCollectionValue\\MovieCollectionValue.csproj": {}
+    "E:\\Projects\\MovieCollectionValue\\MovieCollectionValue\\MovieCollectionValue.csproj": {}
   },
   "projects": {
-    "C:\\Users\\joshm\\source\\repos\\MovieCollectionValue\\MovieCollectionValue\\MovieCollectionValue.csproj": {
+    "E:\\Projects\\MovieCollectionValue\\MovieCollectionValue\\MovieCollectionValue.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joshm\\source\\repos\\MovieCollectionValue\\MovieCollectionValue\\MovieCollectionValue.csproj",
+        "projectUniqueName": "E:\\Projects\\MovieCollectionValue\\MovieCollectionValue\\MovieCollectionValue.csproj",
         "projectName": "MovieCollectionValue",
-        "projectPath": "C:\\Users\\joshm\\source\\repos\\MovieCollectionValue\\MovieCollectionValue\\MovieCollectionValue.csproj",
-        "packagesPath": "C:\\Users\\joshm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\joshm\\source\\repos\\MovieCollectionValue\\MovieCollectionValue\\obj\\",
+        "projectPath": "E:\\Projects\\MovieCollectionValue\\MovieCollectionValue\\MovieCollectionValue.csproj",
+        "packagesPath": "C:\\Users\\Josh\\.nuget\\packages\\",
+        "outputPath": "E:\\Projects\\MovieCollectionValue\\MovieCollectionValue\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\joshm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Josh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

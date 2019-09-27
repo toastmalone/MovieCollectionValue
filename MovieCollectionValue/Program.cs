@@ -11,57 +11,58 @@ namespace MovieCollectionValue
         static void Main(string[] args)
         {
             string moviesFolderLocation;
-            
 
-            List<FileInfo> movies = new List<FileInfo>();
             do
             {
                 Console.WriteLine("Input Location of Movie Folder");
                 moviesFolderLocation = Console.ReadLine();
             } while (Directory.Exists(moviesFolderLocation) == false);
 
-            List<string> videoFilePaths = GetVideoFiles(moviesFolderLocation, "*.mp4|*.mkv|*.wav", SearchOption.AllDirectories);
-            List<string> videoFileNames = new List<string>();
-            
-            //remove small files
-            foreach (string vf in videoFilePaths)
-            {
-                var fi = new FileInfo(vf);
-              /*  if (fi.Length > 200000000) */ videoFileNames.Add(fi.Name);
-                
-            }
-            
-            for(int i = 0; i < videoFileNames.Count; i++)
-            {
-                videoFileNames[i] = videoFileNames[i].Replace("_", "+");
-                videoFileNames[i] = videoFileNames[i].Replace(" ", "+");
-                videoFileNames[i] = $@"https://www.amazon.com/s?k={videoFileNames[i]}&i=instant-video&ref=nb_sb_noss_2";
-            }
-            
+            List<string> movies = GetVideoFiles(moviesFolderLocation, "*.mkv|*.mp4|*.wav", SearchOption.AllDirectories);
 
-            AmazonScraper scraper = new AmazonScraper(videoFileNames.ToArray());
+            AmazonScraper scraper = new AmazonScraper(movies.ToArray());
             scraper.Start();
             Console.WriteLine(scraper.collectionValue);
             Console.ReadLine();
 
             List<string> GetVideoFiles(string directory, string searchPattern, SearchOption searchOption)
             {
+                List<string> videoFileNames = new List<string>();
+
+                List<string> allVideoFiles = new List<string>();
+
                 DirectoryInfo dir = new DirectoryInfo(directory);
 
                 string[] searchPatterns = searchPattern.Split("|");
 
-                List<string> allVideoFiles = new List<string>();
+                foreach (string sp in searchPatterns)
+                {
+                    allVideoFiles.AddRange(Directory.GetFiles(directory, sp, searchOption));
+                }
+
+                foreach (string vf in allVideoFiles)
+                {
+                    var fi = new FileInfo(vf);
+                    if (fi.Length > 200000000) videoFileNames.Add(fi.Name);
+                }
 
                 foreach(string sp in searchPatterns)
                 {
-                    allVideoFiles.AddRange(Directory.GetFiles(directory, sp, searchOption));
-                    for(int i=0; i<allVideoFiles.Count;i++)
+                    for(int i=0;i<videoFileNames.Count;i++)
                     {
-                        allVideoFiles[i] = allVideoFiles[i].Replace(sp.Replace("*", ""), "");
+                        videoFileNames[i] = videoFileNames[i].Replace(sp.Replace("*",""), "");
+                        videoFileNames[i] = videoFileNames[i].Replace("_", "+");
+                        videoFileNames[i] = videoFileNames[i].Replace(" ", "+");
                     }
                 }
 
-                return allVideoFiles;
+                for(int i=0;i<videoFileNames.Count;i++)
+                {
+                    videoFileNames[i] = videoFileNames[i].Replace(".", "+");
+                    videoFileNames[i] = $@"https://www.amazon.com/s?k={videoFileNames[i]}&i=instant-video&ref=nb_sb_noss_2";
+                }
+
+                return videoFileNames;
             }
         }
 
@@ -69,10 +70,12 @@ namespace MovieCollectionValue
 
     class AmazonScraper : WebScraper
     {
+        string[] movies;
         public double collectionValue = 0.0;
         public override void Init()
         {
             this.LoggingLevel = WebScraper.LogLevel.All;
+            this.Request(movies, Parse);
         }
 
         public override void Parse(Response response)
@@ -94,7 +97,7 @@ namespace MovieCollectionValue
 
         public AmazonScraper(string[] movies)
         {
-            this.Request(movies, Parse);
+            this.movies = movies;
         }
     }
 }

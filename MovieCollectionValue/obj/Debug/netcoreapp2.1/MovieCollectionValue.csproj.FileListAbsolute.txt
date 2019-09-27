@@ -20,3 +20,14 @@ C:\Users\Administrator\Desktop\Personal Projects\MovieCollectionValue\MovieColle
 C:\Users\joshm\source\repos\MovieCollectionValue\MovieCollectionValue\bin\Debug\netcoreapp2.1\MovieCollectionValue.pdb
 C:\Users\joshm\source\repos\MovieCollectionValue\MovieCollectionValue\obj\Debug\netcoreapp2.1\MovieCollectionValue.dll
 C:\Users\joshm\source\repos\MovieCollectionValue\MovieCollectionValue\obj\Debug\netcoreapp2.1\MovieCollectionValue.pdb
+E:\Projects\MovieCollectionValue\MovieCollectionValue\bin\Debug\netcoreapp2.1\MovieCollectionValue.deps.json
+E:\Projects\MovieCollectionValue\MovieCollectionValue\bin\Debug\netcoreapp2.1\MovieCollectionValue.runtimeconfig.json
+E:\Projects\MovieCollectionValue\MovieCollectionValue\bin\Debug\netcoreapp2.1\MovieCollectionValue.runtimeconfig.dev.json
+E:\Projects\MovieCollectionValue\MovieCollectionValue\bin\Debug\netcoreapp2.1\MovieCollectionValue.dll
+E:\Projects\MovieCollectionValue\MovieCollectionValue\bin\Debug\netcoreapp2.1\MovieCollectionValue.pdb
+E:\Projects\MovieCollectionValue\MovieCollectionValue\obj\Debug\netcoreapp2.1\MovieCollectionValue.csprojAssemblyReference.cache
+E:\Projects\MovieCollectionValue\MovieCollectionValue\obj\Debug\netcoreapp2.1\MovieCollectionValue.csproj.CoreCompileInputs.cache
+E:\Projects\MovieCollectionValue\MovieCollectionValue\obj\Debug\netcoreapp2.1\MovieCollectionValue.AssemblyInfoInputs.cache
+E:\Projects\MovieCollectionValue\MovieCollectionValue\obj\Debug\netcoreapp2.1\MovieCollectionValue.AssemblyInfo.cs
+E:\Projects\MovieCollectionValue\MovieCollectionValue\obj\Debug\netcoreapp2.1\MovieCollectionValue.dll
+E:\Projects\MovieCollectionValue\MovieCollectionValue\obj\Debug\netcoreapp2.1\MovieCollectionValue.pdb
